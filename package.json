@@ -1,0 +1,23 @@
+{
+  "name": "appkraft",
+  "version": "1.0.0",
+  "description": "A repository for our application development website.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farjanaHuq/appKraft.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/farjanaHuq/appKraft/issues"
+  },
+  "homepage": "https://github.com/farjanaHuq/appKraft#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

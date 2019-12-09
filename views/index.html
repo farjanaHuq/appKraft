@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Links to style sheet-->
     <link rel="stylesheet" href="/css/style.css">
-    <!--Import Google Icon Font-->
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Material icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -15,76 +17,170 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
     <title>AppKraft</title>
+    <style>
+        header {
+            background: url(https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2017Q2/women-in-tech-header@2x.png);
+            background-size: cover;
+            background-position: center;
+            min-height: 1000px;
+        }
+
+        @media screen and (max-width: 670px) {
+            header {
+                min-height: 500px;
+            }
+        }
+
+        .section {
+            padding-top: 4vw;
+            padding-bottom: 4vw;
+        }
+
+        .tabs .indicator {
+            background-color: #1a237e;
+        }
+
+        .tabs .tab a:focus,
+        .tabs .tab a:focus.active {
+            background: transparent;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <nav class="nav-wrapper transparent #4db6ac teal lighten-2">
+            <div class="container">
+                <a href="#" class="brand-logo ">AppKraft</a>
+                <a href="" class="sidenav-trigger" data-target="mobile-links"><i class="material-icons">menu</i></a>
 
-    <nav class="nav-wrapper indigo darken-1">
-        <div class="container">
-            <a href="#" class="brand-logo ">AppKraft</a>
-            <a href="" class="sidenav-trigger" data-target="mobile-links"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="\" class="z-depth-1">Home</a></li>
-                <li><a href="\">About</a></li>
-                <li><a href="\">Contact</a></li>
-                <li><a href="myApp.html">My Apps</a></li>
-                <!-- LogIn -->
-                <li><a href="#login" class="btn #fbc02d #ffa000 amber darken-2 modal-trigger"><span>LogIn</span></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="FarjanaHuq_Resume.html">Resume</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="myApp.html">Projects</a></li>
+                    <li><a href="https://www.linkedin.com/in/farjanahuq/" class="tooltipped btn-floating btn-small"
+                            data-position="bottom" data-tooltip="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a></li>
+                    <li><a href="https://github.com/farjanaHuq" class="tooltipped btn-floating btn-small" data-position="bottom"
+                            data-tooltip="Github">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </a>
+                    </li>
 
-                </li>
-
-            </ul>
-        </div>
-
-        <!-- modal -->
-        <div class="modal" id="login">
-            <div class="modal-content" style="color: black">
-                <h4>Login</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ipsam optio laboriosam
-                    eveniet nihil
-                    voluptatibus quidem totam? Delectus, dolor accusantium vel asperiores est doloremque,
-                    incidunt,
-                    tempora eos obcaecati quidem ipsum.</p>
+                </ul>
+                <ul class="sidenav" id="mobile-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Projects</a></li>
+                </ul>
             </div>
-            <div class="modal-footer">
-                <a href="#" class="modal-close btn orange">Submit</a>
+        </nav>
+    </header>
+    
+    <!-- parallax -->
+    <div class='parallax-container' style="height:30%">
+            <div class="parallax" style="background-color: darkcyan;">
+                <img src="../public/images/background2.jpg " alt="" class="responsive-img">
             </div>
-        </div>
-        <ul class="sidenav" id="mobile-links">
-            <li><a href="\">Home</a></li>
-            <li><a href="\">About</a></li>
-            <li><a href="\">Contact</a></li>
-            <li><a href="\">My Apps</a></li>
-        </ul>
+    </div>
 
-    </nav>
-    <div class="container">
+    <div class="container scrollspy" id="about-me">
         <div class="row">
-            <!-- <div class="col s12 l4">
+            <!-- <div class="col s12 l12">
                 <img src="../public/images/webdev.jpg" alt="" class="image-responsive">
             </div> -->
-            <div class="col s12 l8">
-                <h3 class="my-3">About Me</h3>
-                <p> I am a creative Developer and the mom of two wonderful kids. I love coding, building new applications. 
-                   </p>
-                <br>
-                <P><b>Things I Love To Do </b>
-                    <p>
-                        <li>Coding</li>
-                        <li>Photography</li>
-                        <li>Travelling</li>
-                        <li>Meeting New People</li>
+            <div class="col s12 l12">
+                <h3 class="indigo-text text-darken-4">About Me</h3>
+                <div class="card-panel #b2ebf2 cyan lighten-4">
+                    <p class="left-align"> This is Farjana Huq. I am a creative developer, a daughter, a wife, a mom of
+                        two wonderful kids,
+                        and I love coding,
+                        creating dynamic and interactive web pages. I look at the problems as puzzles, try them and have
+                        a
+                        lot of fun solving them. I enjoy discussing the programming challenge or topics with my peers
+                        and
+                        believe in team spirits.
                     </p>
-                </P>
+                    <p class="left-align">
+                        I was born and raised in Bangladesh. In Bangladesh, people are used to seeing the women as a
+                        teacher,
+                        a doctor or mostly a homemaker, but I wanted to become an engineer from my childhood. Later,
+                        I completed my bachelor in Mechanical Engineering in 2010. After my bachelor, I went to Germany
+                        with
+                        my
+                        husband and studied masters in Sensor System Technology. At the end of my Masters, during my
+                        master
+                        thesis, I developed a concept of an application called ‘Image Processing of Particles in Water’,
+                        which I coded with Java.
+                        That was the beginning of my software development journey, gradually my love for coding kept
+                        increasing.
+                    </p>
+                    <p class="left-align">
+                        My first kid was born right after my Master in 2014, so took time off for him about a year and a
+                        half, during that time learned C++ myself. Later, I worked as a C++ Software Developer in
+                        Germany. I
+                        left my job in June 2017, moved to the USA. My second child was born here, so I decided to spend
+                        a
+                        year with her again, and I used to study and create Swift based application while she felt
+                        asleep.
+                        In April 2019, I went to the UCI Division of Continuing Education for Full Stack Developer
+                        Bootcamp.
+                        I have built quite a few full-stack applications afterwards which you will see in the MyApps
+                        section.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
     <!-- parallax -->
-    <div class='parallax-container' style="height:40%">
+    <div class='parallax-container' style="height:30%">
         <div class="parallax" style="background-color: darkcyan;">
             <img src="../public/images/background2.jpg " alt="" class="responsive-img">
         </div>
     </div>
+    <!-- contact form -->
+    <section class="section container scrollspy" id="contact">
+        <div class="row">
+            <div class="col s12 l5">
+                <h2 class="indigo-text text-darken-4">Get in Touch</h2>
+                <p>Hello there, do you have questions, or want to send me a feedback about my work, or
+                    if you want to work together, please send me a message. I would love to hear from you.
+                </p>
+
+            </div>
+            <div class="col s12 l5 offset-l2">
+                <form style="margin-top: 42px;">
+                    <div class="input-field">
+                        <i class="material-icons prefix">mode_edit</i>
+                        <textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+                        <label for="icon_prefix2">Name</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">email</i>
+                        <input type="email" id="email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">message</i>
+                        <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix">date_range</i>
+                        <input type="text" id="date" class="datepicker">
+                        <label for="date">Choose a date to talk...</label>
+                    </div>
+                    <div class="input-field center">
+                        <button class="btn #ffa726 orange lighten-1 ">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- footer -->
     <footer class="page-footer grey darken-3">
         <div class="container">

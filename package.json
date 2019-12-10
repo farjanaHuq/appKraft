@@ -1,7 +1,7 @@
 {
   "name": "appkraft",
   "version": "1.0.0",
-  "description": "A repository for our application development website.",
+  "description": "A repository for my portfolio",
   "main": "server.js",
   "scripts": {
     "test": "jest",
@@ -11,7 +11,7 @@
     "type": "git",
     "url": "git+https://github.com/farjanaHuq/appKraft.git"
   },
-  "author": "",
+  "author": "Farjana Huq",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/farjanaHuq/appKraft/issues"

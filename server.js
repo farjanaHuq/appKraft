@@ -9,8 +9,8 @@ app.use(express.urlencoded());
 //the html files that I don't wanna show is in another folder.
 app.use(express.static("public"));
 
-var htmlRoute =require("./routes/htmlRoutes.js");
-app.use(htmlRoute);
+// var htmlRoute =require("./routes/htmlRoutes.js");
+// app.use(htmlRoute);
 
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))
 
